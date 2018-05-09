@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <CheckBox
+        android:id="@+id/thief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Thief"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <CheckBox
+        android:id="@+id/cleric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cleric"
+        app:layout_constraintLeft_toLeftOf="@+id/thief"
+        app:layout_constraintStart_toStartOf="@+id/thief"
+        app:layout_constraintTop_toBottomOf="@+id/thief"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <CheckBox
+        android:id="@+id/wizard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wizard"
+        app:layout_constraintStart_toStartOf="@+id/cleric"
+        app:layout_constraintTop_toBottomOf="@+id/cleric"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <CheckBox
+        android:id="@+id/warrior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Warrior"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/wizard"
+        app:layout_constraintTop_toBottomOf="@+id/wizard"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="Classes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/classOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginTop="16dp"
+        android:text="Ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Races"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <CheckBox
+        android:id="@+id/dwarf"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dwarf"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <CheckBox
+        android:id="@+id/elf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Elf"
+        app:layout_constraintStart_toStartOf="@+id/dwarf"
+        app:layout_constraintTop_toBottomOf="@+id/dwarf"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <CheckBox
+        android:id="@+id/halfling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Halfling"
+        app:layout_constraintStart_toStartOf="@+id/elf"
+        app:layout_constraintTop_toBottomOf="@+id/elf"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+    <CheckBox
+        android:id="@+id/human"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Human"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/halfling"
+        app:layout_constraintTop_toBottomOf="@+id/halfling" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="251dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="177dp" />
+</android.support.constraint.ConstraintLayout>
